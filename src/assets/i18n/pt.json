@@ -13,6 +13,25 @@
       "txtSlaughter": "Abater",
       "txtEquipManage": "Gerir Equipmentos",
       "txtUserManage": "Gerir Utilizadores"
+    },
+    "EQUIPMENT_LIST": {
+      "txtCode": "Código",
+      "txtLocation": "Localização",
+      "txtFamily": "Familia",
+      "txtEquip": "Equipmento",
+      "txtCharact": "Características",
+      "txtBrand": "Marca",
+      "txtModel": "Modelo",
+      "txtSerial": "Nr Serie",
+      "txtState": "Estado",
+      "txtLastInspect": "Última Inspeção",
+      "txtNextInspect": "Próxima Inspeção",
+      "txtValidInspect": "Inspeção Válida",
+      "txtManufactDate": "Data de Fabrico",
+      "txtServiceDate": "Data de Serviço",
+      "txtExpireDate": "Data de Validade",
+      "txtPoNr": "PO",
+      "txtActive": "Active"
     }
   }
 }

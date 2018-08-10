@@ -1,3 +1,52 @@
-<p>
-  equipment-list works!
-</p>
+<div class="container">
+  <div class="row">
+    <table class="table table-sm table-dark">
+      <thead>
+        <tr>
+          <th scope="col">{{'GE.EQUIPMENT_LIST.txtCode' | translate}}</th>
+          <th scope="col">{{'GE.EQUIPMENT_LIST.txtLocation' | translate}}</th>
+          <th scope="col">{{'GE.EQUIPMENT_LIST.txtFamily' | translate}}</th>
+          <th scope="col">{{'GE.EQUIPMENT_LIST.txtEquip' | translate}}</th>
+          <th scope="col">{{'GE.EQUIPMENT_LIST.txtBrand' | translate}}</th>
+          <th scope="col">{{'GE.EQUIPMENT_LIST.txtModel' | translate}}</th>
+          <th scope="col">{{'GE.EQUIPMENT_LIST.txtState' | translate}}</th>
+          <th scope="col">{{'GE.EQUIPMENT_LIST.txtValidInspect' | translate}}</th>
+
+          <div *ngIf="moreInfo">
+            <th scope="col">{{'GE.EQUIPMENT_LIST.txtCharact' | translate}}</th>
+            <th scope="col">{{'GE.EQUIPMENT_LIST.txtSerial' | translate}}</th>
+            <th scope="col">{{'GE.EQUIPMENT_LIST.txtLastInspect' | translate}}</th>
+            <th scope="col">{{'GE.EQUIPMENT_LIST.txtNextInspect' | translate}}</th>
+            <th scope="col">{{'GE.EQUIPMENT_LIST.txtManufactDate' | translate}}</th>
+            <th scope="col">{{'GE.EQUIPMENT_LIST.txtServiceDate' | translate}}</th>
+            <th scope="col">{{'GE.EQUIPMENT_LIST.txtExpireDate' | translate}}</th>
+            <th scope="col">{{'GE.EQUIPMENT_LIST.txtPoNr' | translate}}</th>
+          </div>
+        </tr>
+      </thead>
+      <tbody *ngFor="let equipment of equipmentList">
+        <tr>
+          <td>{{equipment.codigo}}</td>
+          <td>{{equipment.localizacao}}</td>
+          <td>{{equipment.familia}}</td>
+          <td>{{equipment.equipamento}}</td>
+          <td>{{equipment.marca}}</td>
+          <td>{{equipment.modelo}}</td>
+          <td>{{equipment.estado}}</td>
+          <td>{{equipment.inspecaoValida}}</td>
+          <div *ngIf="moreInfo">
+            <td>{{equipment.caracteristicas}}</td>
+            <td>{{equipment.nrSerie}}</td>
+            <td>{{equipment.ultimaInspecao}}</td>
+            <td>{{equipment.proximaInspecao}}</td>
+            <td>{{equipment.inspecaoValida}}</td>
+            <td>{{equipment.dataFabrico}}</td>
+            <td>{{equipment.dataServico}}</td>
+            <td>{{equipment.dataValidade}}</td>
+            <td>{{equipment.nrPo}}</td>
+          </div>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

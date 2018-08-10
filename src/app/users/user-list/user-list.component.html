@@ -1,28 +1,32 @@
-<table class="table table-sm table-dark">
-    <thead>
-      <tr>
-        <th scope="col">{{'GE.USER_LIST.txtUserName' | translate}}</th>
-        <th scope="col">{{'GE.USER_LIST.txtFirstName' | translate}}</th>
-        <th scope="col">{{'GE.USER_LIST.txtLastName' | translate}}</th>
-        <th scope="col">{{'GE.USER_LIST.txtLiftDeposit' | translate}}</th>
-        <th scope="col">{{'GE.USER_LIST.txtInspect' | translate}}</th>
-        <th scope="col">{{'GE.USER_LIST.txtRepair' | translate}}</th>
-        <th scope="col">{{'GE.USER_LIST.txtSlaughter' | translate}}</th>
-        <th scope="col">{{'GE.USER_LIST.txtEquipManage' | translate}}</th>
-        <th scope="col">{{'GE.USER_LIST.txtUserManage' | translate}}</th>
-      </tr>
-    </thead>
-    <tbody *ngFor="let user of userList">
-      <tr>
-        <td>{{user.userName}}</td>
-        <td>{{user.nome}}</td>
-        <td>{{user.apelido}}</td>
-        <td>{{user.levantarDepositar}}</td>
-        <td>{{user.inspecionar}}</td>
-        <td>{{user.reparar}}</td>
-        <td>{{user.abater}}</td>
-        <td>{{user.gerirEquipamentos}}</td>
-        <td>{{user.gerirUtilizadores}}</td>
-      </tr>
-    </tbody>
-  </table>
+<div class="container">
+  <div class="row">
+    <table class="table table-sm table-dark">
+      <thead>
+        <tr>
+          <th scope="col">{{'GE.USER_LIST.txtUserName' | translate}}</th>
+          <th scope="col">{{'GE.USER_LIST.txtFirstName' | translate}}</th>
+          <th scope="col">{{'GE.USER_LIST.txtLastName' | translate}}</th>
+          <th scope="col">{{'GE.USER_LIST.txtLiftDeposit' | translate}}</th>
+          <th scope="col">{{'GE.USER_LIST.txtInspect' | translate}}</th>
+          <th scope="col">{{'GE.USER_LIST.txtRepair' | translate}}</th>
+          <th scope="col">{{'GE.USER_LIST.txtSlaughter' | translate}}</th>
+          <th scope="col">{{'GE.USER_LIST.txtEquipManage' | translate}}</th>
+          <th scope="col">{{'GE.USER_LIST.txtUserManage' | translate}}</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let user of userList">
+        <tr>
+          <td>{{user.userName}}</td>
+          <td>{{user.nome}}</td>
+          <td>{{user.apelido}}</td>
+          <td>{{user.levantarDepositar}}</td>
+          <td>{{user.inspecionar}}</td>
+          <td>{{user.reparar}}</td>
+          <td>{{user.abater}}</td>
+          <td>{{user.gerirEquipamentos}}</td>
+          <td>{{user.gerirUtilizadores}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

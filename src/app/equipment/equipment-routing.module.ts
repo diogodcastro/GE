@@ -1,0 +1,21 @@
+import { EquipmentListComponent } from './equipment-list/equipment-list.component';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [
+  {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'equipment-list'
+  },
+  {
+    path: 'equipment-list',
+    component: EquipmentListComponent
+  }
+];
+
+@NgModule({
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule]
+})
+export class EquipmentRoutingModule {}
