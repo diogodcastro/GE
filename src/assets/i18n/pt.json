@@ -1,0 +1,18 @@
+{
+  "GE": {
+    "DASHBOARD": {
+      "title": "Dashboard"
+    },
+    "USER_LIST": {
+      "txtUserName": "Utilizador",
+      "txtFirstName": "Nome",
+      "txtLastName": "Apelido",
+      "txtLiftDeposit": "Levantar & Depositar",
+      "txtInspect": "Inspecionar",
+      "txtRepair": "Reparar",
+      "txtSlaughter": "Abater",
+      "txtEquipManage": "Gerir Equipmentos",
+      "txtUserManage": "Gerir Utilizadores"
+    }
+  }
+}
