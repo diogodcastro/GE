@@ -2,11 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UserService } from './services/user.service';
 import { EquipmentService } from './services/equipment.service';
+import { ReactiveFormsModule } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-  imports: [CommonModule],
+  imports: [CommonModule, ReactiveFormsModule, TranslateModule, RouterModule],
   declarations: [],
-  exports: [CommonModule],
+  exports: [CommonModule, ReactiveFormsModule, TranslateModule, RouterModule],
   providers: [UserService, EquipmentService]
 })
 export class SharedModule {}

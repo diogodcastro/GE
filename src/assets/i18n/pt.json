@@ -1,10 +1,18 @@
 {
   "GE": {
+
+    "HEADER": {
+      "title": "GE_Sample",
+      "home": "Home",
+      "txtEquipments": "Equipmentos",
+      "txtDeposit": "Depositar",
+      "txtUsers": "Utilizadores"
+    },
     "DASHBOARD": {
       "title": "Dashboard"
     },
     "USER_LIST": {
-      "txtUserName": "Utilizador",
+      "txtUsername": "Utilizador",
       "txtFirstName": "Nome",
       "txtLastName": "Apelido",
       "txtLiftDeposit": "Levantar & Depositar",
@@ -32,6 +40,12 @@
       "txtExpireDate": "Data de Validade",
       "txtPoNr": "PO",
       "txtActive": "Active"
+    },
+    "DEPOSIT": {
+      "title": "Depositar Equipamentos",
+      "search": "Pesquisar Equipamentos :",
+      "btnSearch": "Procurar",
+      "btnDeposit": "Depositar"
     }
   }
 }

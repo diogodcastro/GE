@@ -1,6 +1,7 @@
 import { EquipmentListComponent } from './equipment-list/equipment-list.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DepositComponent } from './deposit/deposit.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: 'equipment-list',
     component: EquipmentListComponent
+  },
+  {
+    path: 'equipment-deposit',
+    component: DepositComponent
   }
 ];
 

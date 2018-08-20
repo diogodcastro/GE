@@ -1,9 +1,9 @@
 export enum States {
-  AVAILABLE,
-  USE,
-  REPAIR,
-  SLAUGHTER,
-  INSPECTION_BASKET,
-  FIXED_USAGE,
-  NOT_FOUNDF
+  Disponível = 'Disponível',
+  Utilização = 'Utilização',
+  Reparação = 'Reparação',
+  Abater = 'Abater',
+  Cesta_Inspeção = 'Cesta_Inspeção',
+  Uxo_Fixo = 'Uxo_Fixo',
+  Não_Encontrado = 'Não_Encontrado'
 }

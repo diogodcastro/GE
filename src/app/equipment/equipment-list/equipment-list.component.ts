@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Equipment } from '../../shared/models/equipment.model';
 import { EquipmentService } from '../../shared/services/equipment.service';
-import { Observable } from '../../../../node_modules/rxjs/Observable';
 
 @Component({
   selector: 'app-equipment-list',

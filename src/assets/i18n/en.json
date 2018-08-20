@@ -1,10 +1,18 @@
 {
   "GE": {
+
+    "HEADER": {
+      "title": "GE_Sample",
+      "home": "Home",
+      "txtEquipments": "Equipment",
+      "txtDeposit": "Deposit",
+      "txtUsers": "Users"
+    },
     "DASHBOARD": {
       "title": "Dashboard"
     },
     "USER_LIST": {
-      "txtUserName": "User Name",
+      "txtUsername": "Username",
       "txtFirstName": "First Name",
       "txtLastName": "Last Name",
       "txtLiftDeposit": "Lift & Deposit",
@@ -32,6 +40,12 @@
       "txtExpireDate": "Expire Date",
       "txtPoNr": "PO",
       "txtActive": "Active"
+    },
+    "DEPOSIT": {
+      "title": "Equipments Deposit",
+      "search": "Search for Equipment :",
+      "btnSearch": "Search",
+      "btnDeposit": "Deposit"
     }
   }
 }
