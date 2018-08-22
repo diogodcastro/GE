@@ -6,17 +6,16 @@ import { States } from '../../shared/models/states.model';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-deposit',
-  templateUrl: './deposit.component.html',
-  styleUrls: ['./deposit.component.css']
+  selector: 'app-withdraw',
+  templateUrl: './withdraw.component.html',
+  styleUrls: ['./withdraw.component.css']
 })
-export class DepositComponent implements OnInit {
+export class WithdrawComponent implements OnInit {
   equipmentSearch = new FormControl('');
-  equipment: Equipment;
+  equipmentsToWithdraw = new Array();
 
-  equipmentsToDeposit = new Array();
-
-  constructor(private equipmentService: EquipmentService, private router: Router) {}
+  constructor(private equipmentService: EquipmentService,
+              private router: Router) {}
 
   ngOnInit() {}
 
@@ -24,26 +23,27 @@ export class DepositComponent implements OnInit {
     this.equipmentService
       .getEquipmentByCodigo(this.equipmentSearch.value)
       .subscribe((response: Equipment) => {
-        if (response.estado === States.Utilização) {
-          this.equipmentsToDeposit.push(response);
+        if (response.estado === States.Disponível) {
+          this.equipmentsToWithdraw.push(response);
         }
       });
     this.equipmentSearch.setValue('');
   }
 
-  public depositEquip(): void {
-    this.equipmentsToDeposit.forEach((element: Equipment) => {
-      element.estado = States.Disponível;
+  public withdrawEquip(): void {
+    this.equipmentsToWithdraw.forEach((element: Equipment) => {
+      element.estado = States.Utilização;
       this.equipmentService.updateEquipment(element).subscribe((data: any) => data);
     });
     this.backToHome();
-  }
+   }
 
   public removeEquip(codigo: String): void {
-    this.equipmentsToDeposit = this.equipmentsToDeposit.filter(item => item.codigo !== codigo);
+    this.equipmentsToWithdraw = this.equipmentsToWithdraw.filter(item => item.codigo !== codigo);
   }
 
   public backToHome(): void {
     this.router.navigate(['/dashboard']);
   }
+
 }

@@ -9,7 +9,7 @@ import { RouterModule } from '@angular/router';
 @NgModule({
   imports: [CommonModule, ReactiveFormsModule, TranslateModule, RouterModule],
   declarations: [],
-  exports: [CommonModule, ReactiveFormsModule, TranslateModule, RouterModule],
+  exports: [CommonModule, ReactiveFormsModule, TranslateModule, RouterModule ],
   providers: [UserService, EquipmentService]
 })
 export class SharedModule {}

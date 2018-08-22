@@ -2,6 +2,8 @@ import { EquipmentListComponent } from './equipment-list/equipment-list.componen
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DepositComponent } from './deposit/deposit.component';
+import { WithdrawComponent } from './withdraw/withdraw.component';
+import { NewEquipmentComponent } from './new-equipment/new-equipment.component';
 
 const routes: Routes = [
   {
@@ -16,6 +18,14 @@ const routes: Routes = [
   {
     path: 'equipment-deposit',
     component: DepositComponent
+  },
+  {
+    path: 'equipment-withdraw',
+    component: WithdrawComponent
+  },
+  {
+    path: 'new-equipment',
+    component: NewEquipmentComponent
   }
 ];
 

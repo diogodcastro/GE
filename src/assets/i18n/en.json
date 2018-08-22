@@ -6,7 +6,9 @@
       "home": "Home",
       "txtEquipments": "Equipment",
       "txtDeposit": "Deposit",
-      "txtUsers": "Users"
+      "txtWithdraw": "Withdraw",
+      "txtUsers": "Users",
+      "txtNewEquipment": "New Equipment"
     },
     "DASHBOARD": {
       "title": "Dashboard"
@@ -39,13 +41,20 @@
       "txtServiceDate": "Service Date",
       "txtExpireDate": "Expire Date",
       "txtPoNr": "PO",
-      "txtActive": "Active"
+      "txtActive": "Active",
+      "txtRemove": "Remove"
     },
     "DEPOSIT": {
       "title": "Equipments Deposit",
       "search": "Search for Equipment :",
       "btnSearch": "Search",
       "btnDeposit": "Deposit"
+    },
+    "WITHDRAW": {
+      "title": "Equipments Withdraw",
+      "search": "Search for Equipament :",
+      "btnSearch": "Search",
+      "btnDeposit": "Withdraw"
     }
   }
 }

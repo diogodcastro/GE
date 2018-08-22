@@ -1,0 +1,54 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col-sm-6">
+      <label>
+        {{'GE.WITHDRAW.search' | translate}}
+        <input type="text" [formControl]="equipmentSearch">
+      </label>
+    </div>
+    <button (click)="searchEquip()" type="button" class="btn btn-secondary">
+      {{'GE.WITHDRAW.btnSearch' | translate}}
+    </button>
+  </div>
+
+  <br>
+
+  <div class="row">
+    <table class="table table-sm table-dark">
+      <thead>
+        <tr>
+          <th scope="col">{{'GE.EQUIPMENT_LIST.txtCode' | translate}}</th>
+          <th scope="col">{{'GE.EQUIPMENT_LIST.txtLocation' | translate}}</th>
+          <th scope="col">{{'GE.EQUIPMENT_LIST.txtFamily' | translate}}</th>
+          <th scope="col">{{'GE.EQUIPMENT_LIST.txtEquip' | translate}}</th>
+          <th scope="col">{{'GE.EQUIPMENT_LIST.txtBrand' | translate}}</th>
+          <th scope="col">{{'GE.EQUIPMENT_LIST.txtModel' | translate}}</th>
+          <th scope="col">{{'GE.EQUIPMENT_LIST.txtValidInspect' | translate}}</th>
+          <th scope="col">{{'GE.EQUIPMENT_LIST.txtRemove' | translate}}</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let equipment of equipmentsToWithdraw">
+        <tr>
+          <td>{{equipment.codigo}}</td>
+          <td>{{equipment.localizacao}}</td>
+          <td>{{equipment.familia}}</td>
+          <td>{{equipment.equipamento}}</td>
+          <td>{{equipment.marca}}</td>
+          <td>{{equipment.modelo}}</td>
+          <td>{{equipment.inspecaoValida}}</td>
+          <td><a (click)="removeEquip(equipment.codigo)"><img src="assets/images/remove.png"></a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+    <div class="float-right">
+      <button (click)="withdrawEquip()" type="button" class="btn btn-secondary">
+        {{'GE.WITHDRAW.btnDeposit' | translate}}
+      </button>
+    </div>
+
+
+</div>

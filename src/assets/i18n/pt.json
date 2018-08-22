@@ -6,7 +6,9 @@
       "home": "Home",
       "txtEquipments": "Equipmentos",
       "txtDeposit": "Depositar",
-      "txtUsers": "Utilizadores"
+      "txtWithdraw": "Levantar",
+      "txtUsers": "Utilizadores",
+      "txtNewEquipment": "Novo Equipmento"
     },
     "DASHBOARD": {
       "title": "Dashboard"
@@ -39,13 +41,20 @@
       "txtServiceDate": "Data de Serviço",
       "txtExpireDate": "Data de Validade",
       "txtPoNr": "PO",
-      "txtActive": "Active"
+      "txtActive": "Active",
+      "txtRemove": "Remover"
     },
     "DEPOSIT": {
       "title": "Depositar Equipamentos",
       "search": "Pesquisar Equipamentos :",
       "btnSearch": "Procurar",
       "btnDeposit": "Depositar"
+    },
+    "WITHDRAW": {
+      "title": "Levantar Equipamentos",
+      "search": "Pesquisar Equipamentos :",
+      "btnSearch": "Procurar",
+      "btnDeposit": "Levantar"
     }
   }
 }
