@@ -1,24 +1,66 @@
-
 <div class="container">
   <div class="row">
 
-    <form [formGroup]="newEquipment">
-      <label>
-        Código
-        <input type="text" formControlName="codigo">
-      </label>
-      <label>
-        Localização :
-        <input type="checkbox" formControlName="localizacao">
-      </label>
+    <div class="col-md-6">
 
-    </form>
+      <form [formGroup]="newEquipment">
+        <label>
+          Código :
+          <input type="text" formControlName="codigo">
+        </label>
 
+        <br>
+
+        <label>
+          Localização :
+          <input type="text" formControlName="localizacao">
+        </label>
+        <br>
+
+        <label>
+          Familia :
+          <select class="form-control" id="selectContract" placeholder="Contract1" name="contract">
+            <option>Internship</option>
+            <option>CTI</option>
+          </select>
+        </label>
+
+
+      </form>
+    </div>
+
+    <div class="col-md-6">
+      <form [formGroup]="newEquipment">
+        <label>
+          Data Serviço :
+          <input type="date" formControlName="codigo">
+        </label>
+
+        <br>
+
+        <label>
+          Código
+          <input type="text" formControlName="codigo">
+        </label>
+
+        <label>
+          Código
+          <input type="text" formControlName="codigo">
+        </label>
+        <label>
+          Código
+          <input type="text" formControlName="codigo">
+        </label>
+        <label>
+          Código
+          <input type="text" formControlName="codigo">
+        </label>
+        <label>
+          Localização :
+          <input type="checkbox" formControlName="localizacao">
+        </label>
+
+      </form>
+    </div>
   </div>
 </div>
-
-
-
-
-
-

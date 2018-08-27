@@ -8,7 +8,8 @@
       "txtDeposit": "Deposit",
       "txtWithdraw": "Withdraw",
       "txtUsers": "Users",
-      "txtNewEquipment": "New Equipment"
+      "txtNewEquipment": "New Equipment",
+      "txtMovementRecords": "Movement Records"
     },
     "DASHBOARD": {
       "title": "Dashboard"
@@ -55,6 +56,21 @@
       "search": "Search for Equipament :",
       "btnSearch": "Search",
       "btnDeposit": "Withdraw"
+    },
+    "RECORDS": {
+      "MOVEMENTS": {
+        "title": "title",
+        "txtUsername": "Username",
+        "txtOtherUser": "Other User",
+        "txtCompany": "Company",
+        "txtCode": "Code",
+        "txtEquip": "Equipment",
+        "txtMovement": "Movement",
+        "txtWorkToDo": "Work",
+        "txtDeposit": "Deposit",
+        "txtComments": "Comments",
+        "txtDate": "Date"
+      }
     }
   }
 }

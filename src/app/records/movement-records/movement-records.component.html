@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+
+    <table class="table table-sm table-dark">
+      <thead>
+        <tr>
+          <th scope="col">{{'GE.RECORDS.MOVEMENTS.txtUsername' | translate}}</th>
+          <th scope="col">{{'GE.RECORDS.MOVEMENTS.txtOtherUser' | translate}}</th>
+          <th scope="col">{{'GE.RECORDS.MOVEMENTS.txtCompany' | translate}}</th>
+          <th scope="col">{{'GE.RECORDS.MOVEMENTS.txtCode' | translate}}</th>
+          <th scope="col">{{'GE.RECORDS.MOVEMENTS.txtEquip' | translate}}</th>
+          <th scope="col">{{'GE.RECORDS.MOVEMENTS.txtMovement' | translate}}</th>
+          <th scope="col">{{'GE.RECORDS.MOVEMENTS.txtWorkToDo' | translate}}</th>
+          <th scope="col">{{'GE.RECORDS.MOVEMENTS.txtDeposit' | translate}}</th>
+          <th scope="col">{{'GE.RECORDS.MOVEMENTS.txtComments' | translate}}</th>
+          <th scope="col">{{'GE.RECORDS.MOVEMENTS.txtDate' | translate}}</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let movement of movements">
+        <tr>
+          <td>{{movement.username}}</td>
+          <td>{{movement.usoPorOutro}}</td>
+          <td>{{movement.empresas}}</td>
+          <td>{{movement.codigo}}</td>
+          <td>{{movement.equipamento}}</td>
+          <td>{{movement.movimento}}</td>
+          <td>{{movement.trabalho}}</td>
+          <td>{{movement.tipoDeposito}}</td>
+          <td>{{movement.observacoes}}</td>
+          <td>{{movement.data}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

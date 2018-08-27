@@ -8,7 +8,8 @@
       "txtDeposit": "Depositar",
       "txtWithdraw": "Levantar",
       "txtUsers": "Utilizadores",
-      "txtNewEquipment": "Novo Equipmento"
+      "txtNewEquipment": "Novo Equipmento",
+      "txtMovementRecords": "Registo Movimentos"
     },
     "DASHBOARD": {
       "title": "Dashboard"
@@ -55,6 +56,21 @@
       "search": "Pesquisar Equipamentos :",
       "btnSearch": "Procurar",
       "btnDeposit": "Levantar"
+    },
+    "RECORDS": {
+      "MOVEMENTS": {
+        "title": "title",
+        "txtUsername": "Utilizador",
+        "txtOtherUser": "Uso Por Outro",
+        "txtCompany": "Empresa",
+        "txtCode": "Código",
+        "txtEquip": "Equipmento",
+        "txtMovement": "Movimento",
+        "txtWorkToDo": "Trabalho",
+        "txtDeposit": "Deposito",
+        "txtComments": "Observações",
+        "txtDate": "Data"
+      }
     }
   }
 }

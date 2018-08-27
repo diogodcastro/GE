@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EquipmentService } from '../../shared/services/equipment.service';
 import { FormGroup, FormControl } from '../../../../node_modules/@angular/forms';
+import { NgSwitch } from '@angular/common';
 
 @Component({
   selector: 'app-new-equipment',

@@ -4,7 +4,6 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import * as Constants from './../app-constants';
 import { map } from 'rxjs/operators';
-import { EquipmentModule } from '../../equipment/equipment.module';
 
 @Injectable()
 export class EquipmentService {
