@@ -19,6 +19,7 @@ export class NewEquipmentComponent implements OnInit {
 
   estado: States.Disponível;
 
+  // tslint:disable-next-line:no-inferrable-types
   withInspection: boolean = false;
 
   selectedValue: boolean;
