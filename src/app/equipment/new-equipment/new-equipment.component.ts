@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { EquipmentService } from '../../shared/services/equipment.service';
 import { FormGroup, FormControl } from '../../../../node_modules/@angular/forms';
 import { NgSwitch } from '@angular/common';
+import { Family, Fami } from '../../shared/models/family.model';
 
 @Component({
   selector: 'app-new-equipment',
@@ -10,11 +11,13 @@ import { NgSwitch } from '@angular/common';
 })
 export class NewEquipmentComponent implements OnInit {
 
+  familyList = Fami.keys();
+
   newEquipment = new FormGroup({
     codigo: new FormControl(''),
     localizacao: new FormControl(''),
     familia: new FormControl(''),
-    equipmento: new FormControl(''),
+    equipamento: new FormControl(''),
     caracteristicas: new FormControl(''),
     marca: new FormControl(''),
     modelo: new FormControl(''),

@@ -4,13 +4,21 @@
     <div class="navbar-nav">
       <a class="nav-item nav-link" href="#">{{'GE.HEADER.home' | translate}}</a>
       <a class="nav-item nav-link" href="/users/user-list">{{'GE.HEADER.txtUsers' | translate}}</a>
-      <a class="nav-item nav-link" href="/equipment/equipment-list">{{'GE.HEADER.txtEquipments' | translate}}</a>
-      <a class="nav-item nav-link" href="/equipment/equipment-deposit">{{'GE.HEADER.txtDeposit' | translate}}</a>
-      <a class="nav-item nav-link" href="/equipment/equipment-withdraw">{{'GE.HEADER.txtWithdraw' | translate}}</a>
-      <a class="nav-item nav-link" href="/equipment/new-equipment">{{'GE.HEADER.txtNewEquipment' | translate}}</a>
+      <li class="dropdown" dropdown>
+        <a class="nav-item nav-link" dropdownToggle role="button">
+          Equipments<span class="caret"></span></a>
+        <div *dropdownMenu class="dropdown-menu">
+          <a class="nav-item text-dark" href="/equipment/equipment-list">{{'GE.HEADER.txtEquipments' | translate}}</a>
+          <br>
+          <a class="nav-item text-dark" href="/equipment/equipment-deposit">{{'GE.HEADER.txtDeposit' | translate}}</a>
+          <br>
+          <a class="nav-item text-dark" href="/equipment/equipment-withdraw">{{'GE.HEADER.txtWithdraw' | translate}}</a>
+          <br>
+          <a class="nav-item text-dark" href="/equipment/new-equipment">{{'GE.HEADER.txtNewEquipment' | translate}}</a>
+        </div>
+      </li>
+
       <a class="nav-item nav-link" href="/records/movements">{{'GE.HEADER.txtMovementRecords' | translate}}</a>
     </div>
   </div>
 </nav>
-
-

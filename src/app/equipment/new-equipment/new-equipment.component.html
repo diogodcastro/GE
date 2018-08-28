@@ -4,27 +4,23 @@
     <div class="col-md-6">
 
       <form [formGroup]="newEquipment">
-        <label>
-          Código :
-          <input type="text" formControlName="codigo">
-        </label>
-
+        <label>Código :</label><br><input type="text" formControlName="codigo">
         <br>
-
-        <label>
-          Localização :
-          <input type="text" formControlName="localizacao">
-        </label>
+        <label>Localização :</label><br><input class="align-center" type="text" formControlName="localizacao">
         <br>
-
         <label>
           Familia :
-          <select class="form-control" id="selectContract" placeholder="Contract1" name="contract">
-            <option>Internship</option>
-            <option>CTI</option>
+          <select class="form-control" formControlName="familia">
+            <option *ngFor="let family of familyList">{{family}}</option>
           </select>
         </label>
-
+        <br>
+        <label>
+          Equipamento :
+          <select class="form-control" formControlName="equipamento">
+            <option *ngFor="let family of familyList">{{family}}</option>
+          </select>
+        </label>
 
       </form>
     </div>
