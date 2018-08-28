@@ -42,8 +42,28 @@
       "txtServiceDate": "Service Date",
       "txtExpireDate": "Expire Date",
       "txtPoNr": "PO",
+      "txtSupplier": "Supplier",
       "txtActive": "Active",
       "txtRemove": "Remove"
+    },
+    "NEW_EQUIPMENT": {
+      "title": "title",
+      "txtCode": "Code",
+      "txtLocation" : "Location",
+      "txtFamily": "Family",
+      "txtEquip" : "Equipment",
+      "txtCharact": "Characteristics",
+      "txtBrand": "Brand",
+      "txtModel": "Model",
+      "txtSerial": "Serial",
+      "txtManufactDate": "Manufacturing Date",
+      "txtServiceDate": "Service Date",
+      "txtExpireDate": "Expire Date",
+      "txtPoNr": "PO",
+      "txtSupplier": "Supplier",
+      "txtWithInspection": "With Inspection",
+      "txtSave": "Save",
+      "txtDiscard" : "Discard"
     },
     "DEPOSIT": {
       "title": "Equipments Deposit",

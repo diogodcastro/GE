@@ -42,8 +42,27 @@
       "txtServiceDate": "Data de Serviço",
       "txtExpireDate": "Data de Validade",
       "txtPoNr": "PO",
+      "txtSupplier": "Fornecedor",
       "txtActive": "Active",
       "txtRemove": "Remover"
+    },
+    "NEW_EQUIPMENT": {
+      "title": "title",
+      "txtCode": "Código",
+      "txtLocation" : "Localização",
+      "txtFamily": "Familia",
+      "txtEquip" : "Equipamento",
+      "txtCharact": "Características",
+      "txtBrand": "Marca",
+      "txtModel": "Modelo",
+      "txtSerial": "Número Série",
+      "txtManufactDate": "Data de Fabrico",
+      "txtServiceDate": "Data de Serviço",
+      "txtExpireDate": "Data de Validade",
+      "txtPoNr": "PO",
+      "txtSupplier": "Fornecedor",
+      "txtSave": "Guardar",
+      "txtDiscard" : "Cancelar"
     },
     "DEPOSIT": {
       "title": "Depositar Equipamentos",

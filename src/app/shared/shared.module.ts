@@ -6,11 +6,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { RouterModule } from '@angular/router';
 import { MovementService } from './services/movement.service';
+import { EquipmentsInfoService } from './services/equipmentsInfo.service';
 
 @NgModule({
   imports: [CommonModule, ReactiveFormsModule, TranslateModule, RouterModule],
   declarations: [],
   exports: [CommonModule, ReactiveFormsModule, TranslateModule, RouterModule ],
-  providers: [UserService, EquipmentService, MovementService]
+  providers: [UserService, EquipmentService, MovementService, EquipmentsInfoService]
 })
 export class SharedModule {}

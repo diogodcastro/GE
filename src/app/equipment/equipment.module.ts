@@ -8,6 +8,7 @@ import { SharedModule } from '../shared/shared.module';
 import { WithdrawComponent } from './withdraw/withdraw.component';
 import { NewEquipmentComponent } from './new-equipment/new-equipment.component';
 import { MovementService } from '../shared/services/movement.service';
+import { EquipmentsInfoService } from '../shared/services/equipmentsInfo.service';
 
 @NgModule({
   imports: [
@@ -17,6 +18,6 @@ import { MovementService } from '../shared/services/movement.service';
   ],
   exports: [],
   declarations: [EquipmentListComponent, DepositComponent, WithdrawComponent, NewEquipmentComponent],
-  providers: [EquipmentService, MovementService]
+  providers: [EquipmentService, MovementService, EquipmentsInfoService]
 })
 export class EquipmentModule {}

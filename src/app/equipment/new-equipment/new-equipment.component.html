@@ -1,62 +1,82 @@
 <div class="container">
   <div class="row">
 
-    <div class="col-md-6">
+    <div class="col-md-4">
 
       <form [formGroup]="newEquipment">
-        <label>Código :</label><br><input type="text" formControlName="codigo">
+        <label>{{'GE.NEW_EQUIPMENT.txtCode' | translate}} :</label><br><input type="text" formControlName="codigo">
         <br>
-        <label>Localização :</label><br><input class="align-center" type="text" formControlName="localizacao">
+
+        <label>{{'GE.NEW_EQUIPMENT.txtLocation' | translate}} :</label><br><input class="align-center"
+          type="text" formControlName="localizacao">
         <br>
-        <label>
-          Familia :
+
+        <label>{{'GE.NEW_EQUIPMENT.txtFamily' | translate}} :
           <select class="form-control" formControlName="familia">
             <option *ngFor="let family of familyList">{{family}}</option>
           </select>
         </label>
+
         <br>
         <label>
-          Equipamento :
+          {{'GE.NEW_EQUIPMENT.txtEquip' | translate}} :
           <select class="form-control" formControlName="equipamento">
-            <option *ngFor="let family of familyList">{{family}}</option>
+            <option *ngFor="let equipment of equipmentsInfo">{{equipment.equipamento}}</option>
           </select>
         </label>
-
-      </form>
-    </div>
-
-    <div class="col-md-6">
-      <form [formGroup]="newEquipment">
-        <label>
-          Data Serviço :
-          <input type="date" formControlName="codigo">
-        </label>
-
         <br>
 
-        <label>
-          Código
-          <input type="text" formControlName="codigo">
-        </label>
+        <div>
+          <input type="checkbox" [checked]="withInspection" (change)="withInspection = !withInspection">
+          <div>
+            <label>{{'GE.NEW_EQUIPMENT.txtWithInspection' | translate}}</label>
+          </div>
 
-        <label>
-          Código
-          <input type="text" formControlName="codigo">
-        </label>
-        <label>
-          Código
-          <input type="text" formControlName="codigo">
-        </label>
-        <label>
-          Código
-          <input type="text" formControlName="codigo">
-        </label>
-        <label>
-          Localização :
-          <input type="checkbox" formControlName="localizacao">
-        </label>
+        </div>
 
       </form>
     </div>
+
+    <div class="col-md-4">
+      <form [formGroup]="newEquipment">
+
+        <label>{{'GE.NEW_EQUIPMENT.txtBrand' | translate}} :</label><br><input type="text" formControlName="marca">
+        <br>
+        <label>{{'GE.NEW_EQUIPMENT.txtModel' | translate}} :</label><br><input type="text" formControlName="modelo">
+        <br>
+        <label>{{'GE.NEW_EQUIPMENT.txtSerial' | translate}} :</label><br><input type="text" formControlName="nrSerie">
+        <br>
+        <label>{{'GE.NEW_EQUIPMENT.txtPoNr' | translate}} :</label><br><input type="text" formControlName="nrPo">
+        <br>
+        <label>{{'GE.NEW_EQUIPMENT.txtSupplier' | translate}} :</label><br><input type="text" formControlName="fornecedor">
+        <br>
+        <label>{{'GE.NEW_EQUIPMENT.txtCharact' | translate}} :</label>
+        <br>
+        <textarea cols="30" rows="4" formControlName="caracteristicas"></textarea>
+      </form>
+    </div>
+
+    <div class="col-md-4">
+      <form [formGroup]="newEquipment">
+        <label>{{'GE.NEW_EQUIPMENT.txtManufactDate' | translate}} :</label><br><input type="date" formControlName="dataFabrico">
+        <br>
+        <label>{{'GE.NEW_EQUIPMENT.txtManufactDate' | translate}} :</label><br><input type="date" formControlName="dataFabrico">
+        <br>
+        <label>{{'GE.NEW_EQUIPMENT.txtServiceDate' | translate}} :</label><br><input type="date" formControlName="dataServico">
+        <br>
+        <label>{{'GE.NEW_EQUIPMENT.txtExpireDate' | translate}} :</label><br><input type="date" formControlName="dataValidade">
+      </form>
+    </div>
+
   </div>
+
+  <div class="float-right">
+    <button (click)="saveEquipment()" type="button" class="btn btn-secondary">
+      {{'GE.NEW_EQUIPMENT.txtSave' | translate}}
+    </button>
+    <button (click)="backToEquipmentList()" type="button" class="btn btn-secondary">
+      {{'GE.NEW_EQUIPMENT.txtDiscard' | translate}}
+    </button>
+  </div>
+
 </div>

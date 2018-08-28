@@ -30,9 +30,16 @@ export class EquipmentService {
   public updateEquipment(equipment: Equipment): Observable<Equipment> {
     let headers = new HttpHeaders();
     headers.append('Content-type', 'application/json');
-
     return this.http
       .put<Equipment>(`${Constants.APP_URI}/${this.endpoint}`, equipment, { headers: headers })
+      .pipe(map((response: any) => response));
+  }
+
+  public saveEquipment(equipment: Equipment): Observable<Equipment> {
+    let headers = new HttpHeaders();
+    headers.append('Content-type', 'application/json');
+    return this.http
+      .post<Equipment>(`${Constants.APP_URI}/${this.endpoint}`, equipment, { headers: headers })
       .pipe(map((response: any) => response));
   }
 }
