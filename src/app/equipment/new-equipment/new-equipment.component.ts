@@ -99,6 +99,5 @@ export class NewEquipmentComponent implements OnInit {
   public saveEquipment(): void {
     this.createEquipment();
     this.equipmentService.saveEquipment(this.equipmentToSave).subscribe((data: any) => data);
-
   }
 }

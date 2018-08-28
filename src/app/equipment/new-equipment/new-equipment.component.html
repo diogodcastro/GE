@@ -27,11 +27,8 @@
         <br>
 
         <div>
-          <input type="checkbox" [checked]="withInspection" (change)="withInspection = !withInspection">
-          <div>
-            <label>{{'GE.NEW_EQUIPMENT.txtWithInspection' | translate}}</label>
-          </div>
-
+          <label>{{'GE.NEW_EQUIPMENT.txtWithInspection' | translate}}</label><br>
+          <ui-switch [checked]="withInspection" (change)="withInspection = !withInspection"></ui-switch>
         </div>
 
       </form>
@@ -78,5 +75,4 @@
       {{'GE.NEW_EQUIPMENT.txtDiscard' | translate}}
     </button>
   </div>
-
 </div>

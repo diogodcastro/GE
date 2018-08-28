@@ -7,11 +7,12 @@ import { TranslateModule } from '@ngx-translate/core';
 import { RouterModule } from '@angular/router';
 import { MovementService } from './services/movement.service';
 import { EquipmentsInfoService } from './services/equipmentsInfo.service';
+import { UiSwitchModule } from 'ngx-toggle-switch';
 
 @NgModule({
-  imports: [CommonModule, ReactiveFormsModule, TranslateModule, RouterModule],
+  imports: [CommonModule, ReactiveFormsModule, TranslateModule, RouterModule, UiSwitchModule],
   declarations: [],
-  exports: [CommonModule, ReactiveFormsModule, TranslateModule, RouterModule ],
+  exports: [CommonModule, ReactiveFormsModule, TranslateModule, RouterModule, UiSwitchModule ],
   providers: [UserService, EquipmentService, MovementService, EquipmentsInfoService]
 })
 export class SharedModule {}
